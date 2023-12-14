@@ -1,0 +1,60 @@
+version: 2
+
+sources:
+   - name: public
+     description: Rental data on Snowflake
+     database: dvdrental
+     tables:
+        - name: customer
+          description: Raw customers data.
+          columns:
+            - name: customer_id
+              description: primary key for customers
+              tests:
+                - unique
+                - not_null
+            - name: first_name
+              description: first name of customers
+
+
+        - name: address
+          description: Customers address data.
+          columns:
+            - name: address_id
+              description: primary key for customers address
+              tests:
+                - unique
+                - not_null
+            - name: address
+              description: first line of customers address
+
+        - name: city
+          description: Customers city data.
+          columns:
+            - name: city_id
+              description: primary key for customers city of residence
+              tests:
+                - unique
+                - not_null
+            - name: city
+              description: Name of city customers live
+
+        - name: country
+          description: Customers country data.
+          columns:
+            - name: country_id
+              description: primary key for customers country of residence
+              tests:
+                - unique
+                - not_null
+            - name: country
+              description: Name of country customers live
+
+        - name: payment
+          description: Customers payment data.
+          columns:
+            - name: payment_id
+              description: primary key for customers payment transactions
+              tests:
+                - unique
+                - not_null
