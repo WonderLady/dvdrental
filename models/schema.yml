@@ -6,7 +6,7 @@ sources:
      database: dvdrental
      tables:
         - name: customer
-          description: Raw customers data.
+          description: '{{ doc("customer_table") }}'
           columns:
             - name: customer_id
               description: primary key for customers
@@ -18,7 +18,7 @@ sources:
 
 
         - name: address
-          description: Customers address data.
+          description: '{{ doc("address_table") }}'
           columns:
             - name: address_id
               description: primary key for customers address
