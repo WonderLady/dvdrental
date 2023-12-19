@@ -29,7 +29,7 @@ sources:
               description: first line of customers address
 
         - name: city
-          description: Customers city data.
+          description: '{{ doc("city_table") }}'
           columns:
             - name: city_id
               description: primary key for customers city of residence
@@ -40,7 +40,7 @@ sources:
               description: Name of city customers live
 
         - name: country
-          description: Customers country data.
+          description: '{{ doc("country_table") }}'
           columns:
             - name: country_id
               description: primary key for customers country of residence
@@ -51,7 +51,7 @@ sources:
               description: Name of country customers live
 
         - name: payment
-          description: Customers payment data.
+          description: '{{ doc("payment_table") }}'
           columns:
             - name: payment_id
               description: primary key for customers payment transactions
@@ -60,7 +60,7 @@ sources:
                 - not_null
 
         - name: film
-          description: rental film data.
+          description: '{{ doc("film_table") }}'
           columns:
             - name: film_id
               description: primary key for rental films
@@ -69,7 +69,7 @@ sources:
                 - not_null
 
         - name: inventory
-          description: rental inventory data.
+          description: '{{ doc("inventory_table") }}'
           columns:
             - name: inventory_id
               description: primary key for all inventories
@@ -78,7 +78,7 @@ sources:
                 - not_null
 
         - name: rental
-          description: rental data.
+          description: '{{ doc("rental_table") }}'
           columns:
             - name: rental_id
               description: primary key for all rentals
@@ -87,7 +87,7 @@ sources:
                 - not_null
 
         - name: category
-          description: rented film category data.
+          description: '{{ doc("category_table") }}'
           columns:
             - name: category_id
               description: primary key for all rented film categories
@@ -98,7 +98,7 @@ sources:
               description: Name of rented film categories
 
         - name: film_category
-          description: film category data.
+          description: '{{ doc("film_category_table") }}'
           columns:
             - name: film_id
               description: primary key for film categories
