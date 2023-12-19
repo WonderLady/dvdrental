@@ -1,4 +1,9 @@
 # DVD Rental Analytics Project
+![image](https://github.com/WonderLady/dvdrental/assets/141274750/e4027f4c-d79b-4bbf-86f5-f2e1ff7a8ce8)
+
+
+
+
 ### Description:
 The goal of this project is to assess rental performance, identify the top rented film genres and recognise the top 10 loyal customers.
 
