@@ -1,6 +1,7 @@
 # DVD Rental Analytics Project
 ### Description:
 The goal of this project is to assess rental performance, identify the top rented film genres and recognise the top 10 loyal customers.
+
 On execution, data was extracted from the Postgres database and staged into a dedicated database on Snowflake using Airbyte. DBT Core was employed to create models that captures rental performance, top rented film genres and top 10 loyal customers. This transformed data was loaded into the production database on Snowflake in form of views. DBT Cloud was utilised for scheduling and orchestrating the execution of the above models. This project includes scripts, workflows to execute the project and schema.md file that contains comprehensive documentation/details on tables, relationships and fields.
 
 ### Pre-requisite:
